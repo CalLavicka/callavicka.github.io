@@ -82,8 +82,8 @@ var galagaFrames = [[16, 104],
 var tractorFrames = [[209, 103], [265, 103], [321, 103]];
 
 var loop = new SeamlessLoop();
-loop.addUri("../mus/galagacapture.wav", 276, "tractor_beam1");
-loop.addUri("../mus/galagacapture2.wav", 271, "tractor_beam2");
+loop.addUri("/final-project/mus/galagacapture.wav", 276, "tractor_beam1");
+loop.addUri("/final-project/mus/galagacapture2.wav", 271, "tractor_beam2");
 loop.callback(loadcallback);
 loading++;
 
@@ -94,37 +94,37 @@ loading++;
 
 var downsound = new Audio();
 downsound.addEventListener('loadeddata', loadcallback);
-downsound.src = "./../mus/galagaflying.mp3";
+downsound.src = "/final-project/mus/galagaflying.mp3";
 loading++;
 
 var beeps = [];
 for(var i=0; i<4; i++) {
   beeps.push(new Audio());
   beeps[i].addEventListener('loadeddata', loadcallback);
-  beeps[i].src = "./../mus/fastinvader" + (i + 1).toString() + ".wav";
+  beeps[i].src = "/final-project/mus/fastinvader" + (i + 1).toString() + ".wav";
   loading++;
 }
 
 var shootsound = new Audio();
 shootsound.addEventListener('loadeddata', loadcallback);
-shootsound.src = "../mus/invaderkilled.wav";
+shootsound.src = "/final-project/mus/invaderkilled.wav";
 loading++;
 
 var killsound = new Audio();
 killsound.addEventListener('loadeddata', loadcallback);
-killsound.src = "../mus/shoot.wav";
+killsound.src = "/final-project/mus/shoot.wav";
 loading++;
 
 var explosionsound = new Audio();
 explosionsound.addEventListener('loadeddata', loadcallback);
-explosionsound.src = "../mus/explosion.wav";
+explosionsound.src = "/final-project/mus/explosion.wav";
 loading++;
 
 
 // Sprite Sheet
 var img = new Image();
 img.onload = loadcallback;
-img.src = "../img/spacesprites.png";
+img.src = "/final-project/img/spacesprites.png";
 loading++;
 
 function removeObjs() {
