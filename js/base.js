@@ -67,7 +67,7 @@ $(document).ready(function() {
 
 var bimg = new Image();
 bimg.onload = loadcallback;
-bimg.src = "/img/background.jpg";
+bimg.src = "/final-project/img/background.jpg";
 loading++;
 
 
