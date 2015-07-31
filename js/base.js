@@ -94,14 +94,14 @@ loading++;
 
 var downsound = new Audio();
 downsound.addEventListener('loadeddata', loadcallback);
-downsound.src = "../mus/galagaflying.mp3";
+downsound.src = "./../mus/galagaflying.mp3";
 loading++;
 
 var beeps = [];
 for(var i=0; i<4; i++) {
   beeps.push(new Audio());
   beeps[i].addEventListener('loadeddata', loadcallback);
-  beeps[i].src = "../mus/fastinvader" + (i + 1).toString() + ".wav";
+  beeps[i].src = "./../mus/fastinvader" + (i + 1).toString() + ".wav";
   loading++;
 }
 
