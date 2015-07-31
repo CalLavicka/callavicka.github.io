@@ -89,7 +89,7 @@ loading++;
 
 var galagaImg = new Image();
 galagaImg.onload = loadcallback;
-galagaImg.src = "final-project/img/galagasprites.png"
+galagaImg.src = "/final-project/img/galagasprites.png"
 loading++;
 
 var downsound = new Audio();
